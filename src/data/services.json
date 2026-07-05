@@ -1,0 +1,31 @@
+[
+    [
+  {
+    "id": 1,
+    "name": "Consulta Médica",
+    "description": "Consulta general",
+    "duration": 60,
+    "price": 950,
+    "category": "Salud",
+    "available": false
+  }
+]
+  {
+    "id": 2,
+    "name": "Psicología",
+    "description": "Consulta psicológica",
+    "duration": 50,
+    "price": 850,
+    "category": "Salud",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Masaje relajante",
+    "description": "Masaje corporal de 60 minutos",
+    "duration": 60,
+    "price": 800,
+    "category": "Bienestar",
+    "available": true
+  }
+]
