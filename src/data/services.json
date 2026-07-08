@@ -1,5 +1,4 @@
 [
-    [
   {
     "id": 1,
     "name": "Consulta Médica",
@@ -8,24 +7,23 @@
     "price": 950,
     "category": "Salud",
     "available": false
-  }
-]
+  },
   {
     "id": 2,
     "name": "Psicología",
     "description": "Consulta psicológica",
     "duration": 50,
-    "price": 850,
+    "price": 900,
     "category": "Salud",
-    "available": true
+    "available": false
   },
   {
-    "id": 3,
-    "name": "Masaje relajante",
-    "description": "Masaje corporal de 60 minutos",
-    "duration": 60,
-    "price": 800,
-    "category": "Bienestar",
+    "id": 4,
+    "name": "Nutrición",
+    "description": "Consulta nutricional",
+    "duration": 45,
+    "price": 700,
+    "category": "Salud",
     "available": true
   }
 ]

@@ -1,30 +1,13 @@
-import env from "./config/env.config.js";
-import ServiceManager from "./managers/ServiceManager.js";
+import express from "express";
+import servicesRouter from "./routes/services.router.js";
 
-const manager = new ServiceManager();
+const app = express();
 
-console.log("Servidor iniciado correctamente.");
-console.log(`Puerto: ${env.PORT}`);
-console.log(`Entorno: ${env.NODE_ENV}`);
+// Middleware para leer JSON
+app.use(express.json());
 
-// const newService = await manager.addService({
-//     name: "Masaje relajante",
-//     description: "Masaje corporal de 60 minutos",
-//     duration: 60,
-//     price: 800,
-//     category: "Bienestar",
-//     available: true
-// });
+// Rutas
+app.use("/api/services", servicesRouter);
 
-// console.log(newService);
+export default app;
 
-//const updated = await manager.updateService(1, {
-//    price: 950,
-//    available: false
-//});
-
-const deleted = await manager.deleteService(1);
-
-console.log(deleted);
-
-//console.log(updated);
